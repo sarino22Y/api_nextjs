@@ -6,23 +6,23 @@ import React, { useEffect, useState } from 'react'
 const page = () => {
     const [number, setNumber] = useState(0);
 
-    // Quand le composant est monté
-    useEffect(() => {
-        console.log("Le composant est monté");
-    }, []);
+    // // Quand le composant est monté
+    // useEffect(() => {
+    //     console.log("Le composant est monté");
+    // }, []);
 
-    // Quand le composant est demonté (c'est grâce au 'return')
-    useEffect(() => {
-        return () => {
-            console.log("Le composant est demonté")
-        };
-    }, []);
+    // // Quand le composant est demonté (c'est grâce au 'return')
+    // useEffect(() => {
+    //     return () => {
+    //         console.log("Le composant est demonté")
+    //     };
+    // }, []);
 
-    // Quand le nombre change
-    useEffect(() => {
-        console.log(`Le nombre est maintenant ${number}`);
+    // // Quand le nombre change
+    // useEffect(() => {
+    //     console.log(`Le nombre est maintenant ${number}`);
         
-    }, [number]);
+    // }, [number]);
 
     const increment = () => setNumber(number + 1);
     const decrement = () => setNumber(number - 1);
