@@ -5,6 +5,7 @@ import DialogUtils from "@/src/features/utils/DialogUtils";
 import CalendarUtils from "@/src/features/utils/CalendarUtils";
 import { CardWithForm } from "@/src/features/utils/cardWithForm";
 import Link from "next/link";
+import AnimationBird from "@/src/features/utils/AnimationBird";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
+        <AnimationBird />
       </main>
     </div>
   );

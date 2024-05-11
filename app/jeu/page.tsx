@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from '@/components/ui/button';
+import AnimationBird from '@/src/features/utils/AnimationBird';
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react'
@@ -69,6 +70,8 @@ const page = () => {
                 <Button onClick={() => setBgAndRandomNumber()}>Random</Button>
                 <h2 className={clsx(randomNumberColor, "min-w-10 text-center")}>{randomNumber}</h2>
             </div>
+
+            <AnimationBird />
         </div>
     )
 }
